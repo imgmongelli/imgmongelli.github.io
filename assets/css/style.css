@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,700;1,400&display=swap");
+.text-primary {
+  color: #FF7452 !important;
+}
+
+body {
+  background-color: #37474F;
+}
+
+@media print {
+  body {
+    background-color: #FFFFFF;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, div, a, button, small, span {
+  font-family: 'Nunito', sans-serif;
+  color: #FFFFFF;
+}
+
+@media print {
+  h1, h2, h3, h4, h5, h6, p, div, a, button, small, span {
+    color: #000000;
+  }
+}
+
+h1.name {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.text-secondary {
+  color: #E0E0E0 !important;
+}
+
+@media print {
+  .text-secondary {
+    color: #0f0f0f !important;
+  }
+}
+
+a:hover {
+  color: #FF7452;
+  text-decoration: none;
+}
+
+.section-title {
+  color: #FF7452;
+  font-weight: 700;
+}
+
+@media print {
+  .section-title {
+    color: #FF5722;
+  }
+}
+
+.contact-info {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.work-experience__role {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.work-experience__company {
+  font-size: 20px;
+  font-weight: 200;
+  color: #E0E0E0;
+}
+
+@media print {
+  .work-experience__company {
+    color: #0f0f0f;
+  }
+}
+
+.work-experience__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work-experience__info span {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  color: #FF7452;
+}
+
+.work-experience__techs .badge {
+  background-color: #FF7452 !important;
+  color: #37474F;
+}
+
+@media print {
+  .work-experience__techs .badge {
+    background-color: #FFFFFF !important;
+    color: #37474F !important;
+    border-color: #37474F !important;
+  }
+}
+
+.skill-category {
+  border: solid 1px #FFFFFF;
+  border-radius: 10px;
+}
+
+@media print {
+  .skill-category {
+    border-color: #37474F;
+  }
+}
+
+.skill-category__title {
+  background-color: #37474F;
+  position: relative;
+  padding: 5px;
+  top: -12px;
+  left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+@media print {
+  .skill-category__title {
+    background-color: #FFFFFF !important;
+  }
+}
+
+.skill-category__skill__icon {
+  width: 25px;
+}
+/*# sourceMappingURL=style.css.map */

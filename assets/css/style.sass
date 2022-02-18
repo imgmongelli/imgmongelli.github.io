@@ -1,0 +1,106 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,700;1,400&display=swap')
+
+$primary: #FF7452
+$primary-darker: #FF5722
+$dark: #37474F
+$black: #000000
+$white1: #FFFFFF
+$white2: #E0E0E0
+$secondary: #0f0f0f
+
+.text-primary
+  color: $primary !important
+
+body
+  background-color: $dark
+  @media print
+    background-color: $white1
+
+h1, h2, h3, h4, h5, h6, p, div, a, button, small, span
+  font-family: 'Nunito', sans-serif
+  color: $white1
+  @media print
+    color: #000000
+
+h1.name
+  font-size: 2.8rem
+  font-weight: 600
+
+.text-secondary
+  color: $white2 !important
+  @media print
+    color: $secondary !important
+
+a
+  // text-decoration: underline
+  &:hover
+    color: $primary
+    text-decoration: none
+
+.section-title
+  color: $primary
+  font-weight: 700
+  @media print
+    color: $primary-darker
+
+.contact-info
+  margin-top: 0
+  margin-bottom: 0
+
+.work-experience
+
+  &__role
+    font-size: 22px
+    font-weight: 600
+
+  &__company
+    font-size: 20px
+    font-weight: 200
+    color: $white2
+    @media print
+      color: $secondary
+
+  &__company
+
+  &__info
+    display: flex
+    justify-content: space-between
+
+    span
+      font-family: 'Roboto', sans-serif
+      font-style: italic
+      color: $primary
+
+  &__techs
+    .badge
+      background-color: $primary !important
+      color: $dark
+      @media print
+        background-color: $white1 !important
+        color: $dark !important
+        border-color: $dark !important
+
+.skill-category
+  border: solid 1px $white1
+  border-radius: 10px
+
+  @media print
+    border-color: $dark
+
+  &__title
+    background-color: $dark
+    position: relative
+    padding: 5px
+    top: -12px
+    left: 20px
+    font-family: 'Roboto', sans-serif
+    font-style: italic
+    text-transform: uppercase
+    @media print
+      background-color: $white1 !important
+
+  &__skill
+    &__icon
+      width: 25px

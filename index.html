@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>Gianluca Mongelli | Curriculum Vitae</title>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+  <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥑</text></svg>">
+</head>
+
+<body>
+
+  <div class="container py-5"
+       x-data="{workExperiences: workExperiences, skillCategories: skillCategories, educations: educations, hobbies: hobbies}">
+
+
+    <div class="header pb-5">
+
+      <div class="row">
+        <div class="col-md-8 d-flex align-items-center">
+
+          <div>
+            <h1 class="name">Gianluca Mongelli</h1>
+            <h5 class="text-secondary">
+              👨🏻‍💻 Full-Stack Web Developer, <b>PHP</b> Enthusiast, hard-coder, courious DevOps.
+            </h5>
+          </div>
+        </div>
+        <div class="col-md-4 text-left text-md-right my-4 my-md-2">
+          <p class="contact-info d-flex justify-content-md-end">
+            <a class="order-1 order-md-0" target="_blank"
+               href="mailto:gianluca.mongelli@gmail.com">gianluca.mongelli@gmail.com</a>
+            <span class="mr-2 mr-md-0 ml-0 ml-md-2 order-0 order-md-1">📧</span>
+          </p>
+          <p class="contact-info d-flex justify-content-md-end">
+            <a class="order-1 order-md-0" target="_blank" href="tel:+393240537258">+39 324 053 7258</a>
+            <span class="mr-2 mr-md-0 ml-0 ml-md-2 order-0 order-md-1">📱</span>
+          </p>
+          <p class="contact-info d-flex justify-content-md-end">
+            <span class="order-1 order-md-0">Brescia (BS), Italy</span>
+            <span class="mr-2 mr-md-0 ml-0 ml-md-2 order-0 order-md-1">📍</span>
+          </p>
+          <p class="contact-info d-flex justify-content-md-end">
+            <span class="order-1 order-md-0">Rome (RM), Italy</span>
+            <span class="mr-2 mr-md-0 ml-0 ml-md-2 order-0 order-md-1">📍</span>
+          </p>
+          <p class="contact-info d-flex justify-content-md-end">
+            <a class="order-1 order-md-0" target="_blank"
+               href="https://linkedin.com/in/imgmongelli">linkedin.com/in/imgmongelli</a>
+            <span class="mr-2 mr-md-0 ml-0 ml-md-2 order-0 order-md-1">🔗</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 pr-5">
+        <h2 class="section-title mb-2">Main work experience</h2>
+
+        <template x-for="(we,i) in workExperiences" :key="i">
+          <div class="work-experience my-4 py-1">
+            <h4 class="work-experience__role" x-text="we.role"></h4>
+            <h5 class="work-experience__company" x-text="we.company"></h5>
+            <div class="work-experience__info">
+              <span x-text="we.daterange"></span>
+              <span x-text="we.place"></span>
+            </div>
+
+            <template x-for="(work,y) in we.works" :key="y">
+              <div class="my-3">
+
+                <p class="work-experience__description mt-2 mb-0" x-text="work.description"></p>
+
+                <div class="work-experience__techs">
+                  <template x-for="(tech, z) in work.techs" :key="z">
+                    <span class="badge badge-light" x-text="tech"></span>
+                  </template>
+                </div>
+
+              </div>
+            </template>
+
+          </div>
+        </template>
+
+      </div>
+      <div class="col-md-6">
+
+        <!-- Skills -->
+        <div class="mb-5 pb-4">
+          <h2 class="section-title mb-5">Main skills</h2>
+
+          <template x-for="(skillCategory, i) in skillCategories" :key="i">
+            <div class="skill-category mt-5 pb-3">
+              <span x-text="skillCategory.name" class="skill-category__title"></span>
+
+              <div class="row">
+                <template x-for="(skill, j) in skillCategory.skills" :key="j">
+                  <div class="col-6 col-lg-4 mb-2 skill-category__skill d-flex align-items-center">
+                    <div class="skill-category__skill__icon ml-3 mr-2">
+                      <img :src="'./assets/img/dev-icons/'+skill.icon" alt="" width="20px">
+                    </div>
+                    <p x-text="skill.name" class="mb-0"></p>
+                  </div>
+                </template>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <!-- Education and certificates -->
+        <div class="mb-5 pb-4">
+          <h2 class="section-title mb-4">Education & Certificates</h2>
+
+          <template x-for="(education,i) in educations" :key="i">
+            <div class="work-experience mb-4 py-1">
+              <h4 class="work-experience__role" x-text="education.title"></h4>
+              <h5 class="work-experience__company" x-text="education.subtitle"></h5>
+              <div class="work-experience__info">
+                <span x-text="education.description"></span>
+                <span x-text="education.place" class="text-right"></span>
+              </div>
+
+            </div>
+          </template>
+        </div>
+
+        <!-- Hobbies and interests-->
+        <div class="mb-5 pb-4">
+          <h2 class="section-title mb-4">Hobbies and interests</h2>
+          <div class="row">
+            <template x-for="hobby in hobbies">
+              <div class="col-12 col-lg-6 mb-1">
+                <span x-text="hobby[0]"></span>
+                <span x-text="hobby[1]" class="ml-2"></span>
+              </div>
+            </template>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+          crossorigin="anonymous"></script>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
