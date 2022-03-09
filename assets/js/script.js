@@ -90,7 +90,7 @@ const workExperiences = [
     role: 'Back-end Developer',
     company: 'MG Interactive Limited',
     daterange: '02/2017 - 12/2017',
-    place: 'Rome, Italy',
+    place: 'Hong-Kong, China',
     works: [
       {
         description:
