@@ -1,16 +1,16 @@
 const workExperiences = [
   {
     role: 'PHP Backend Developer',
-    company: 'Ernst & Young Global Limited',
+    company: 'IFI Security SRL',
     daterange: '10/2021 - Current',
     place: 'Rome, Italy',
     works: [
       {
-        description: 'EY is a multinational professional services network',
+        description: 'IFI Advisory is an intelligence and security risk management company.',
         techs: [],
       },
       {
-        description: 'Development of Sectra24® an innovative travel security platform designed to ensure optimal travel management.',
+        description: 'Design and development of Sectra24® an innovative travel security platform designed to ensure optimal travel management.',
         techs: ['Laravel', 'MySQL','Docker', 'Bootstrap'],
       },
       {
@@ -53,7 +53,7 @@ const workExperiences = [
     role: 'Lead Developer',
     company: 'Intent SPA',
     daterange: '10/2019 - 10/2021',
-    place: 'Bari, Italy (Remote)',
+    place: 'Rome, Italy (Remote)',
     works: [
       {
         description:
