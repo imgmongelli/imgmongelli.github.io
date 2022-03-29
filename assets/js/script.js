@@ -1,12 +1,12 @@
 const workExperiences = [
   {
-    role: 'PHP Backend Developer',
-    company: 'IFI Security SRL',
+    role: 'PHP Backend Developer (senior 3°)',
+    company: 'EY',
     daterange: '10/2021 - Current',
     place: 'Rome, Italy',
     works: [
       {
-        description: 'IFI Advisory is an intelligence and security risk management company.',
+        description: 'Ernst & Young Global Limited, doing business as EY,is a multinational professional services network',
         techs: [],
       },
       {
