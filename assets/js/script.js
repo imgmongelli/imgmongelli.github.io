@@ -4,6 +4,7 @@ const workExperiences = [
     company: 'EY',
     daterange: '10/2021 - Current',
     place: 'Rome, Italy',
+    
     works: [
       {
         description: 'Ernst & Young Global Limited, doing business as EY,is a multinational professional services network',
