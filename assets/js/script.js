@@ -3,7 +3,7 @@ const workExperiences = [
     role: 'Lead Developer',
     company: 'EY',
     daterange: '10/2021 - Current',
-    place: 'Rome, Italy',
+    place: 'Rome|Milan, Italy',
     
     works: [
       {
