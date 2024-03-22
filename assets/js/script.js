@@ -1,6 +1,6 @@
 const workExperiences = [
   {
-    role: 'PHP Backend Developer (senior 3°)',
+    role: 'Lead Developer',
     company: 'EY',
     daterange: '10/2021 - Current',
     place: 'Rome, Italy',
@@ -12,11 +12,11 @@ const workExperiences = [
       },
       {
         description: 'Design and development of Sectra24® an innovative travel security platform designed to ensure optimal travel management.',
-        techs: ['Laravel', 'MySQL','Docker', 'Bootstrap'],
+        techs: ['Laravel', 'MySQL','Docker', 'Angular','NestJs','Mongo'],
       },
       {
         description: 'Development of Android and IOS app.',
-        techs: ['Cotlin', 'Swift'],
+        techs: ['flutter'],
       },
     ],
   },
