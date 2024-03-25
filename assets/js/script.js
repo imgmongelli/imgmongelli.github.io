@@ -140,36 +140,47 @@ const workExperiences = [
 
 const skillCategories = [
   {
-    name: 'Frontend',
+    name: 'Programming Languages',
     skills: [
-      { name: 'HTML', icon: 'html.svg' },
-      { name: 'CSS', icon: 'css.svg' },
       { name: 'Javascript', icon: 'javascript.svg' },
       { name: 'Typescript', icon: 'typescript.svg' },
+      { name: 'PHP', icon: 'php.svg' },
+      { name: 'Python', icon: 'python.svg' },
+      { name: 'Dart', icon: 'dartlang-icon.svg' },
+    ],
+  },
+  {
+    name: 'Frontend Frameworks & Libraries',
+    skills: [
       { name: 'Angular', icon: 'angular.svg' },
       { name: 'VueJS', icon: 'vuejs.svg' },
       { name: 'Bootstrap', icon: 'bootstrap.svg' },
-      { name: 'Dart', icon:'dartlang-icon.svg'},
-      { name: 'Flutter', icon:'flutter_logo.svg'}
-     
     ],
   },
   {
-    name: 'Backend',
+    name: 'Mobile & Cross-Platform Development',
     skills: [
-      { name: 'PHP', icon: 'php.svg' },
+      { name: 'Flutter', icon: 'flutter_logo.svg' },
+    ],
+  },
+  {
+    name: 'Backend Frameworks',
+    skills: [
       { name: 'Laravel', icon: 'laravel.svg' },
-      { name: 'Python', icon: 'python.svg' },
       { name: 'Django', icon: 'django.svg' },
+      { name: 'NestJs', icon: 'nestjs.svg' },
+    ],
+  },
+  {
+    name: 'Databases & Query Languages',
+    skills: [
       { name: 'MySQL', icon: 'mysql.svg' },
       { name: 'GraphQL', icon: 'graphql.svg' },
-      { name: 'NestJs', icon: 'nestjs.svg' },
-      { name: 'Node', icon: 'nodejs.svg' },
+      { name: 'MongoDB', icon: 'mongodb.svg' },
     ],
   },
-
   {
-    name: 'Dev Tools',
+    name: 'Development Tools & Services',
     skills: [
       { name: 'Git', icon: 'git.svg' },
       { name: 'VSCode', icon: 'vscode.svg' },
