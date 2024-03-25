@@ -163,6 +163,8 @@ const skillCategories = [
       { name: 'Django', icon: 'django.svg' },
       { name: 'MySQL', icon: 'mysql.svg' },
       { name: 'GraphQL', icon: 'graphql.svg' },
+      { name: 'NestJs', icon: 'nestjs.svg' },
+      { name: 'Node', icon: 'nodejs.svg' },
     ],
   },
 
