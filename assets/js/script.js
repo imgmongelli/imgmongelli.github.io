@@ -150,14 +150,6 @@ const skillCategories = [
     ],
   },
   {
-    name: 'Frontend Frameworks & Libraries',
-    skills: [
-      { name: 'Angular', icon: 'angular.svg' },
-      { name: 'VueJS', icon: 'vuejs.svg' },
-      { name: 'Bootstrap', icon: 'bootstrap.svg' },
-    ],
-  },
-  {
     name: 'Mobile & Cross-Platform Development',
     skills: [
       { name: 'Flutter', icon: 'flutter_logo.svg' },
