@@ -1,6 +1,6 @@
 const workExperiences = [
   {
-    role: 'Lead Developer',
+    role: 'Software Engineering Manager',
     company: 'EY',
     daterange: '10/2021 - Current',
     place: 'Rome|Milan, Italy',
